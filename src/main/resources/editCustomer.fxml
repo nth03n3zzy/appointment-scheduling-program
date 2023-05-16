@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditCustomerController">
+   <children>
+      <TextField fx:id="customerID" disable="true" editable="false" layoutX="174.0" layoutY="63.0" promptText="ID - auto generated" />
+      <TextField fx:id="customerName" layoutX="174.0" layoutY="109.0" />
+      <TextField fx:id="customerAddress" layoutX="174.0" layoutY="157.0" />
+      <TextField fx:id="customerPhoneNumber" layoutX="174.0" layoutY="201.0" />
+      <TextField fx:id="customerPostalCode" layoutX="174.0" layoutY="248.0" />
+      <ComboBox fx:id="country" layoutX="155.0" layoutY="285.0" prefHeight="26.0" prefWidth="90.0" />
+      <Label layoutX="78.0" layoutY="67.0" text="Customer ID" />
+      <Label layoutX="58.0" layoutY="113.0" text="Customer Name" />
+      <Label layoutX="41.0" layoutY="161.0" text="Customer Address" />
+      <Label layoutX="25.0" layoutY="252.0" text="Customer Postal Code" />
+      <Label layoutX="9.0" layoutY="205.0" text="Customer Phone Number" />
+      <ComboBox fx:id="stateProvince" layoutX="265.0" layoutY="285.0" prefHeight="26.0" prefWidth="82.0" />
+      <Button layoutX="531.0" layoutY="361.0" mnemonicParsing="false" onAction="#cancelButtonClicked" text="Cancel" />
+      <Button layoutX="458.0" layoutY="362.0" mnemonicParsing="false" onAction="#saveButtonClicked" text="Save" />
+      <Label layoutX="13.0" layoutY="290.0" text="Country / state/province" />
+      <Label layoutX="18.0" layoutY="14.0" text="editing Customer">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
